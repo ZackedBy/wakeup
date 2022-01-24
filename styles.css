@@ -1,0 +1,270 @@
+.logo-name {
+    color:#5E3AEE;
+    font-size: 30px;
+}
+body {
+font-family: Poppins;
+font-weight: 600;
+
+}
+.navi {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 75px;
+}
+.menu-item {
+    margin-left: 40px;
+    font-size: 30px;
+    margin-top: 13px;
+}
+.menu-item a {
+color: black;
+text-decoration: none;
+}
+.menu-item a:hover {
+font-weight: 700;
+transition: 0.5s;
+font-size: 1.1rem;
+}
+.invite-section {
+    background:#F0F0F5;
+    padding: 69px 75px;
+    margin: 0px 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+.inv-sec-title {
+    font-size: 60px;
+    font-weight: 800;
+}
+.inv-sec-title span {
+    color:#5E3AEE;
+}
+.inv-sec-text {
+    color: #696969;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: -30px;
+}
+.inv-sec-butt button {
+    width: 250px;
+    height: 65px;
+    box-shadow: -1px 2px 0px 1px #b9b9b9;
+    margin-right: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    font-size: 27px;
+    border: none;
+    border-radius: 5px;
+}
+.contact-button {
+    
+    background: #ffffff;
+    
+}
+.projects-button {
+    
+    background: #5E3AEE;
+    color: #ffffff;
+   
+}
+.prosloika {
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid #F0F0F5;
+    border-left: none;
+    border-right: none;
+
+    margin: 0px 75px ;
+
+}
+.cifry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.cifry p {
+    color: #BFB8B8;
+    margin-top: -20px;
+    font-size: 1.5rem;
+}
+
+.about {
+    background: #0F1221;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+    
+    
+   
+}
+.about-left {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 75px;
+    width: 60%;
+    
+}
+.about-right {
+    
+    padding-top: 5rem;
+    
+}
+.polosa {
+    width: 20rem;
+	height: 3rem;
+	background: #5E3AEE;
+    
+
+}
+.about-title {
+    color: white;
+    margin-top: -3.5rem;
+    font-size: 35px;
+}
+.about-text {
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+    margin-top: -3.5rem;
+}
+.about-logo {
+    color: #5E3AEE;
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: -3.2rem;
+}
+
+
+
+/* .table h1 {
+    color: #5E3AEE;
+    margin-left: 75px;
+}
+.table table {
+    
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    margin-left: 75px;
+    margin-right: 75px;
+    }
+
+
+.table td {
+    padding-bottom: 50px;
+    padding-left: 15rem;
+} */
+    
+
+
+.table2 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.table2-text {
+    color: #5E3AEE;
+    margin-left: 75px;
+    font-size: 1.5rem;
+
+}
+.stolb {
+    margin-left:  10rem;    
+}
+.stolb div {
+    margin-bottom: 2rem;
+}
+.podval {
+    background-color: #5E3AEE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.podval-left {
+    width: 50%;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 75px;
+    }
+.podval-left p {
+    margin-top: -3rem;
+}
+.podval-left img {
+    margin-top: -3rem;
+}
+.podval-right {
+    width: 50%;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-right: 75px;
+
+
+    
+}
+.podval-right input {
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    outline: none;
+    font-family: inherit;
+    padding: 15px 0 10px;
+    font-weight: 600;
+    font-size: 40px;
+    box-sizing: border-box;
+    margin-top: 0.5rem;
+
+  
+}
+.podval-right textarea{
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    outline: none;
+    font-family: inherit;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 0.5rem;
+}
+
+.submit-button {
+    font-weight: 600;
+    font-size: 40px;
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    background-color: #ffffff;
+    margin-top: 1rem;
+    padding: 15px 0 10px;
+}
+.jopa {
+    margin: 3rem 0 3rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 40px;
+}
