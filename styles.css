@@ -29,7 +29,7 @@ text-decoration: none;
 .menu-item a:hover {
 font-weight: 700;
 transition: 0.5s;
-font-size: 1.1rem;
+font-size: 29px;
 }
 .invite-section {
     background:#F0F0F5;
