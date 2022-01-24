@@ -40,6 +40,13 @@ font-size: 29px;
     justify-content: space-between;
     margin-bottom: 4rem;
 }
+@media (max-width: 1000px) {
+    .invite-section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
 .inv-sec-title {
     font-size: 60px;
     font-weight: 800;
@@ -73,7 +80,7 @@ font-size: 29px;
     
     background: #5E3AEE;
     color: #ffffff;
-   
+
 }
 .prosloika {
     display: flex;
@@ -85,6 +92,7 @@ font-size: 29px;
     margin: 0px 75px ;
 
 }
+
 .cifry {
     display: flex;
     flex-direction: column;
@@ -104,8 +112,7 @@ font-size: 29px;
     align-items: center;
     justify-content: space-between;
     margin-top: 3rem;
-    
-    
+
    
 }
 .about-left {
@@ -145,8 +152,12 @@ font-size: 29px;
     font-size: 40px;
     margin-top: -3.2rem;
 }
-
-
+@media (max-width: 1000px) {
+    .about {
+    display: flex;
+    flex-direction: column;
+    }
+}
 
 /* .table h1 {
     color: #5E3AEE;
@@ -187,6 +198,12 @@ font-size: 29px;
 }
 .stolb div {
     margin-bottom: 2rem;
+}
+@media (max-width: 1000px) {
+    .table2 {
+    display: flex;
+    flex-direction: column;
+    }
 }
 .podval {
     background-color: #5E3AEE;
@@ -261,6 +278,11 @@ font-size: 29px;
     margin-top: 1rem;
     padding: 15px 0 10px;
 }
+@media (max-width: 1000px) {
+    .podval {
+    display: block;
+    align-items: center;
+    }
 .jopa {
     margin: 3rem 0 3rem;
     display: flex;
