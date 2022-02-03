@@ -7,22 +7,20 @@ font-family: Poppins;
 font-weight: 600;
 
 }
-.navi {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
+
 header {
     display: flex;
     justify-content: space-between;
     margin: 0px 75px;
+ 
 }
-.menu-item {
+
+.navi-item {
     margin-left: 40px;
     font-size: 30px;
     margin-top: 13px;
 }
-.menu-item a {
+.navi-item a {
 color: black;
 text-decoration: none;
 }
@@ -93,17 +91,18 @@ font-size: 29px;
 
 }
 
-.cifry {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 15px;
-    font-size: 20px;
-}
-.cifry p {
-    color: #BFB8B8;
-    margin-top: -20px;
-    font-size: 1.5rem;
+
+@media (max-width: 1000px) {
+    .prosloika {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 75px;
+    }
+    .cifry {
+        width: 50%;
+        
+    }
 }
 
 .about {
@@ -137,25 +136,25 @@ font-size: 29px;
 }
 .about-title {
     color: white;
-    margin-top: -3.5rem;
-    font-size: 35px;
+    font-size: 30rem;
 }
 .about-text {
     color: white;
     font-weight: 500;
     font-size: 40px;
-    margin-top: -3.5rem;
 }
 .about-logo {
     color: #5E3AEE;
     font-weight: 600;
     font-size: 40px;
-    margin-top: -3.2rem;
+    ;
 }
 @media (max-width: 1000px) {
     .about {
     display: flex;
     flex-direction: column;
+    margin-top: 3rem;
+    padding-top: 1rem;
     }
 }
 
@@ -190,7 +189,7 @@ font-size: 29px;
 .table2-text {
     color: #5E3AEE;
     margin-left: 75px;
-    font-size: 1.5rem;
+    font-size: large;
 
 }
 .stolb {
@@ -201,8 +200,13 @@ font-size: 29px;
 }
 @media (max-width: 1000px) {
     .table2 {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    }
+    .stolb {
+        width: 50%;
+        margin: 0;
     }
 }
 .podval {
@@ -216,30 +220,22 @@ font-size: 29px;
     width: 50%;
     color: #ffffff;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 30px;
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin-left: 75px;
     }
-.podval-left p {
-    margin-top: -3rem;
-}
-.podval-left img {
-    margin-top: -3rem;
-}
+
 .podval-right {
     width: 50%;
     color: #ffffff;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 30px;
     display: flex;
     flex-direction: column;
     align-items: left;
     margin-right: 75px;
 
-
-    
 }
 .podval-right input {
     width: 100%;
@@ -250,7 +246,7 @@ font-size: 29px;
     font-family: inherit;
     padding: 15px 0 10px;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 30px;
     box-sizing: border-box;
     margin-top: 0.5rem;
 
@@ -264,7 +260,7 @@ font-size: 29px;
     width: 100%;
     box-sizing: border-box;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 0.5rem;
 }
 
@@ -275,14 +271,14 @@ font-size: 29px;
     width: 100%;
     border: none;
     background-color: #ffffff;
-    margin-top: 1rem;
+    margin: 1rem 0 1rem;
     padding: 15px 0 10px;
 }
-@media (max-width: 1000px) {
+/*@media (max-width: 1000px) {
     .podval {
     display: block;
     align-items: center;
-    }
+    }*/
 .jopa {
     margin: 3rem 0 3rem;
     display: flex;
