@@ -17,60 +17,78 @@
 </head>
 
 <body>
-
-    <header>
-        <div class="logo-wrapper">
-            <p class="logo-name">/ZackedBy</p>
-        </div>
+    
+    <header class="d-flex justify-content-between ">
+        
+      
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <div class="container-fluid d-flex justify-content-start ">
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item d-flex justify-content-start ">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Projects</a>
+                        <li class="nav-item d-flex justify-content-start">
+                            <a class="nav-link active" aria-current="page" href="#Projects">Projects</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">About</a>
+                        <li class="nav-item d-flex justify-content-start">
+                            <a class="nav-link active" aria-current="page" href="#about">About</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Contacts</a>
+                        <li class="nav-item d-flex justify-content-start">
+                            <a class="nav-link active" aria-current="page" href="#contacts">Contacts</a>
                         </li>
                     </ul>
-
+                   
                 </div>
             </div>
         </nav>
+        <div class="logo-wrapper d-flex align-items-center pt-3">
+            <h6 class="logo-name">/ZackedBy</h6>
+        </div>
     </header>
 
 
 
 
-    <div class="container invite-section">
+    <div class="container invite-section" id="home">
         <div class="row">
             <div class="col-md-6 col-sm-12 inv-sec-left">
                 <h1 class="inv-sec-title">
                     Hello, <br>
-                    I am <span>Kozlik Oslik</span>
+                    I am <span>Zakhar Metelkin</span>
                 </h1>
-                <Web class="inv-sec-text">
-                    Testi testi
-                    </p>
-                    <div class="inv-sec-butt">
-                        <button class="contact-button">
-                            Contacts
+               
+                <h4 class="inv-sec-text">
+                    Software engeneer / Project Manager
+                </h4>
+                <br>
+                <br>
+
+                    <div class="inv-sec-butt">  
+                        <button class="contact-button font-weight-bold" onclick="scrollToContacts()">
+                            <h3>Contact</h3>
                         </button>
-                        <button class="projects-button">
-                            Projects
+                        
+                        <script>
+                        function scrollToContacts() {
+                            window.location.hash = '#contacts';
+                        }
+                        </script>
+                        
+                        <button class="projects-button" onclick="scrollToProjects()">
+                            <h3 class="font-weight-bold">Projects</h3>
                         </button>
+                        <script>
+                            function scrollToProjects() {
+                                window.location.hash = '#projects';
+                            }
+                            </script>
                     </div>
             </div>
             <div class="col-md-6 col-sm-12 inv-sec-right">
@@ -80,145 +98,123 @@
     </div>
     <div class="container prosloika mb-5">
 
-        <div class="cifry">
-            <h1>50+</h1>
-            <p>Projects Completed</p>
+        <div class="cifry" id="Projects">
+            <h1>10+</h1>
+            <h5>Projects Completed</h5>
         </div>
         <div class="cifry">
-            <h1>45+</h1>
-            <p>Github Repository</p>
+            <h1>10+</h1>
+            <h5>Github Repository</h5>
         </div>
         <div class="cifry">
-            <h1>5+</h1>
-            <p>Years of Experience</p>
+            <h1>20+</h1>
+            <h5>Years of Experience</h5>
         </div>
         <div class="cifry">
-            <h1>700+</h1>
-            <p>Youtube Subscribers</p>
+            <h1>70+</h1>
+            <h5>bad jokes known</h5>
         </div>
     </div>
 
-    <div class="about">
+    <div class="about" id="about">
         <div class="container">
-            <div class="row d-flex align-items-center ">
+            <div class="row d-flex align-items-center">
                 <div class="col-md-6 col-sm-12 about-left mt-5">
                     <div class="polosa"></div>
                     <div class="about-title">
                         <h1>A Bit About Me...</h1>
                     </div>
                     <div class="about-text">
-                        <h5>Hello, My name is Kozlik Oslik. <br>
-                            I am a Mediapalvelujen toteuttaja <br>
-                            I’m currently learning UI/UX development. <br>
-                            Checkout my projects on github. </h5>
+                        <h5>
+                            I am a true lifelong learner. I have experience in web development, starting from design in Figma and going all the way to backend. Currently, I am continuing to study this field and also focusing on Java and embedded systems. <br>
+                                Considering my extensive experience in leadership positions, I am seeking a job as a product or project manager.
+                        </h5>
                     </div>
                     <div class="about-logo">
                         <p>@ZackedBy</p>
                     </div>
                 </div>
-                <div class=" col-md-6 col-sm-12 about-right">
-                    <img src="images/Mockup.png" class="img-fluid" alt="">
+                
+                <div class="col-md-6 col-sm-12 about-right text-center"> 
+                    <img src="images/Mockup.png" class="img-fluid mx-auto" alt=""> 
                 </div>
             </div>
         </div>
     </div>
 
-
-    <!--<div class="table">
-    <h1>Skills</h1>
-    <table>
-        <tr>
-            <td>HTML</td>
-            <td>PHP</td>
-            <td>SQL</td>
-            <td>Python</td>
-        </tr>
-        <tr>
-            <td>CSS</td>
-            <td>SCSS</td>
-            <td>C/C++</td>
-            <td>Responsive Design</td>
-        </tr>
-        <tr>
-            <td>JavaScript</td>
-            <td>Typescript</td>
-            <td>Node Js</td>
-            <td>UI/UX Design</td>
-        </tr>
-    </table>
-</div> -->
     <div class="container">
         <div class="table2-text mt-5">
             <h1>Skills</h1>
         </div>
         <div class="row">
             <div class=" col-xl-3 col-md-6 mt-2">
-                <div class="h3 text-center">HTML</div>
+                <div class="h4 text-center">HTML</div>
             </div>
             <div class=" col-xl-3 col-md-6 mt-2">
-                <div class="h3 text-center">CSS</div>
+                <div class="h4 text-center">SCSS</div>
             </div>
             <div class=" col-xl-3 col-md-6 mt-2">
-                <div class="h3 text-center">Javascript</div>
+                <div class="h4 text-center">API</div>
             </div>
             <div class=" col-xl-3 col-md-6 mt-2">
-                <div class="h3 text-center">PHP</div>
+                <div class="h4 text-center">Java</div>
             </div>
             <div class=" col-xl-3 col-md-6 mt-2">
-                <div class="h3 text-center">SCSS</div>
+                <div class="h4 text-center">CSS</div>
             </div>
             <div class=" col-xl-3 col-md-6 mt-2">
-                <div class="h3 text-center">Typescript</div>
+                <div class="h4 text-center">PHP</div>
             </div>
             <div class=" col-xl-3 col-md-6 mt-2">
-                <div class="h3 text-center">SQL</div>
+                <div class="h4 text-center">SQL</div>
             </div>
             <div class=" col-xl-3 col-md-6 mt-2">
-                <div class="h3 text-center">C/C++</div>
+                <div class="h4 text-center">Git</div>
             </div>
             <div class=" col-xl-3 col-md-6 mt-2">
-                <div class="h3 text-center">Node Js</div>
+                <div class="h4 text-center">Javascript</div>
             </div>
             <div class=" col-xl-3 col-md-6 mt-2">
-                <div class="h3 text-center">Python</div>
+                <div class="h4 text-center">Embedded systems</div>
             </div>
             <div class=" col-xl-3 col-md-6 mt-2">
-                <div class="h3 text-center">Responsive Design</div>
+                <div class="h4 text-center">Responsive Design</div>
             </div>
             <div class=" col-xl-3 col-md-6 mt-2">
-                <div class="h3 text-center">UI/UX Design</div>
+                <div class="h4 text-center">UI/UX Design</div>
             </div>
 
         </div>
     </div>
 
-    <div class="podval  mt-5">
+    <div class="podval mt-5" id="contacts">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-12 podval-left mt-5">
                     <h1>Contact</h1>
-                    <h5>Want a website for your brand and business? <br>
-                        I design what you desire....</h5>
+                    <h5>
+                        Looking for a true professional to elevate your brand and drive business success? I have a proven track record of turning ideas into reality. Let's collaborate to bring your vision to life.
+                    </h5>
                     <img src="images/hshs 1.png" class="img-fluid" alt="">
                 </div>
                 <div class="col-md-6 col-sm-12 podval-right">
-                    <form action="">
+                    <form action="process_form.php" method="POST"> 
                         <div class="podval-input">
                             <label for="name">Name</label>
-                            <input type="name" id="name">
+                            <input type="text" id="name" name="name"> 
                         </div>
                         <div class="podval-input">
                             <label for="email">E-mail</label>
-                            <input type="email" id="email">
+                            <input type="email" id="email" name="email"> 
                         </div>
                         <div class="podval-input">
                             <label for="text">Message</label>
-                            <textarea rows="4" type="name" id="name"></textarea>
+                            <textarea rows="4" id="message" name="message"></textarea> 
                         </div>
+                        <button type="submit" class="submit-button">Submit</button> 
                     </form>
-                    <button class="submit-button">
-                        Submit
                 </div>
+                
             </div>
         </div>
     </div>
